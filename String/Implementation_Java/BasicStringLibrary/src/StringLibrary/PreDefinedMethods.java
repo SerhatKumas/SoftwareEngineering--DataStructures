@@ -4,7 +4,7 @@ public class PreDefinedMethods {
     public static void main(String[] args) {
 
         //String definition with new clause
-        String stringShortTest = new String ("Serhat");
+        String stringShortTest = new String("Serhat");
 
         //String definition without new clause -> String string = "First test string without new clause for pre-defined methods class";
         String stringLongTest = " First test string without new clause test for pre-defined methods class : Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
@@ -13,7 +13,6 @@ public class PreDefinedMethods {
                 "facilisi. Pellentesque sit amet laoreet urna, quis aliquet enim. Sed risus felis, viverra eget ipsum vel, finibus mattis nunc. Praesent ac" +
                 " odio in tortor malesuada aliquam et ac urna. Suspendisse ut pharetra augue. Nullam non lacus turpis. Cras vitae malesuada felis, in mattis" +
                 " sapien. Duis interdum facilisis ante, et lacinia. ";
-
 
 
         //Returns the number of characters in the String.
@@ -26,7 +25,7 @@ public class PreDefinedMethods {
         System.out.println(stringLongTest.substring(10));
 
         //Returns the substring from first parameter to second parameter-1 index.
-        System.out.println(stringLongTest.substring(10,15));
+        System.out.println(stringLongTest.substring(10, 15));
 
         //Returns the index within the string of the first occurrence.
         System.out.println(stringLongTest.indexOf("pre"));
@@ -38,7 +37,7 @@ public class PreDefinedMethods {
         System.out.println(stringLongTest.lastIndexOf("pre"));
 
         //Returns the index within the string of the last occurrence of the specified string, after given index as parameter.
-        System.out.println(stringLongTest.lastIndexOf("pre",20));
+        System.out.println(stringLongTest.lastIndexOf("pre", 20));
 
         //Compares this string to the specified object and returns either true or false
         System.out.println(stringShortTest.equals("Serhat"));
@@ -65,7 +64,7 @@ public class PreDefinedMethods {
         System.out.println(stringLongTest.trim());
 
         //Returns new string by replacing all occurrences of first parameter(target) with second parameter(replacement)
-        System.out.println(stringLongTest.replace("e","a"));
+        System.out.println(stringLongTest.replace("e", "a"));
 
         //Returns true if string contains the given string
         System.out.println(stringLongTest.contains("pharetra"));

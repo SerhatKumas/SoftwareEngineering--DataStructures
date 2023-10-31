@@ -5,11 +5,13 @@ import java.text.StringCharacterIterator;
 import java.util.ArrayList;
 
 public class StringMethodsImplementation implements CustomStringMethods, AuxiliaryMethods {
+    //Checks whether string is palindrome or not
     @Override
     public boolean isPalindrome(String string) {
         return string.equals(reverse(string));
     }
 
+    //Returns reverse of string
     @Override
     public String reverse(String string) {
         StringBuilder newString = new StringBuilder();
@@ -19,11 +21,13 @@ public class StringMethodsImplementation implements CustomStringMethods, Auxilia
         return newString.toString();
     }
 
+    //Removes all the spaces from string
     @Override
     public String removeSpace(String string) {
         return string.replace(" ", "");
     }
 
+    //Returns array that contains all the different chars
     @Override
     public ArrayList<Character> listOfCharsOfString(String string) {
         ArrayList<Character> charList = new ArrayList<>();
@@ -36,12 +40,15 @@ public class StringMethodsImplementation implements CustomStringMethods, Auxilia
         return charList;
     }
 
+    //Returns number of word in a string
     @Override
     public int wordCount(String string) {
         string = string.trim();
         return spaceCountBetweenWords(string) + 1;
     }
 
+    //Returns number of space between words but not as a number of digits.
+    //Even if there is more than 2 digits space, it takes as one count of space
     @Override
     public int spaceCountBetweenWords(String string) {
         int count = 0;
@@ -58,6 +65,8 @@ public class StringMethodsImplementation implements CustomStringMethods, Auxilia
         return count;
     }
 
+    //Returns number of character in a string but takes empty digits out
+    // length - digit number of spaces
     @Override
     public int characterCount(String string) {
         int count = 0;
@@ -69,6 +78,7 @@ public class StringMethodsImplementation implements CustomStringMethods, Auxilia
         return count;
     }
 
+    //Implemented instead of String.equals(String) method
     @Override
     public boolean areEqual(String target, String compareTo) {
         if (lengthOfString(target) == lengthOfString(compareTo)) {
@@ -82,6 +92,7 @@ public class StringMethodsImplementation implements CustomStringMethods, Auxilia
         return false;
     }
 
+    //Implemented instead of String.length method
     @Override
     public int lengthOfString(String string) {
         CharacterIterator stringIterator
@@ -94,6 +105,7 @@ public class StringMethodsImplementation implements CustomStringMethods, Auxilia
         return count;
     }
 
+    //Implemented instead of String.concatenate(String) method
     @Override
     public String concatenateTwoString(String baseString, String additionalString) {
         return baseString + additionalString;
