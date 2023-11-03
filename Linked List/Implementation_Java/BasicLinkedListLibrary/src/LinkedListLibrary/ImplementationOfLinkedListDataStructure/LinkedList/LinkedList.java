@@ -5,7 +5,14 @@ import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.SingleLLNo
 
 public abstract class LinkedList {
 
-    Node headNode;
-    Node currentNode;
+    public Node headNode;
+    public Node currentNode;
+
+    public abstract void displayLinkedList();
+    public abstract void displayNodeByIndex(int index);
+    public abstract void popNodeAtTheEnd(int newNodeValue);
+    public abstract void popNodeByIndex(int newNodeValue, int index);
+    public abstract void deleteNodeByIndex(int index);
+    public abstract void updateNodeByIndex(int value, int index);
 
 }

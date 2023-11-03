@@ -2,7 +2,7 @@ package LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node;
 
 public class DoublyLLNode extends Node{
 
-    Node previousNode;
+    public Node previousNode;
 
     public DoublyLLNode(int value, Node previousNode, Node nextNode){
         this.previousNode = previousNode;
