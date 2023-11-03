@@ -4,10 +4,14 @@ public class DoublyLLNode extends Node{
 
     Node previousNode;
 
-    public DoublyLLNode(int value, DoublyLLNode previousNode, DoublyLLNode nextNode){
+    public DoublyLLNode(int value, Node previousNode, Node nextNode){
         this.previousNode = previousNode;
         this.data = value;
         this.nextNode = nextNode;
     }
 
+    public DoublyLLNode(Node nextNode, Node previousNode){
+        this.nextNode = nextNode;
+        this.previousNode = previousNode;
+    }
 }

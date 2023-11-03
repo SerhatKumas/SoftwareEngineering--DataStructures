@@ -1,11 +1,10 @@
 package LinkedListLibrary.ImplementationOfLinkedListDataStructure.LinkedList;
 
-import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.Node;
 import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.SingleLLNode;
 
-public abstract class LinkedList {
+public class SinglyLinkedList extends LinkedList{
 
-    Node headNode;
-    Node currentNode;
-
+    public SinglyLinkedList(){
+        this.headNode = new SingleLLNode(null);
+    }
 }
