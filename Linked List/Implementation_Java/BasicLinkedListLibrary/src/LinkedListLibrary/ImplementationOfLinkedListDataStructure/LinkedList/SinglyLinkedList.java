@@ -1,10 +1,11 @@
 package LinkedListLibrary.ImplementationOfLinkedListDataStructure.LinkedList;
 
-import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.Node;
 import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.SingleLLNode;
 
-public class SinglyLinkedList extends LinkedList{
+public class SinglyLinkedList implements LinkedList{
 
+    public SingleLLNode headNode;
+    public SingleLLNode currentNode;
     public SinglyLinkedList(){
         this.headNode = new SingleLLNode(null);
         this.currentNode = headNode;
@@ -12,17 +13,17 @@ public class SinglyLinkedList extends LinkedList{
 
     @Override
     public void displayLinkedList() {
-        Node currentNode = this.headNode;
-        while(currentNode.nextNode!=null){
+        SingleLLNode currentNode = this.headNode;
+        do{
+            System.out.println(currentNode.toString());
             currentNode = currentNode.nextNode;
-            System.out.print(currentNode.data + " ");
-        }
+        }while(currentNode.nextNode!=null);
         System.out.println();
     }
 
     @Override
     public void displayNodeByIndex(int index) {
-        Node currentNode = this.headNode;
+        SingleLLNode currentNode = this.headNode;
         for(int i = 0 ; i <= index ; i++){
             currentNode = currentNode.nextNode;
         }
@@ -38,7 +39,7 @@ public class SinglyLinkedList extends LinkedList{
 
     @Override
     public void popNodeByIndex(int newNodeValue, int index) {
-        Node currentNode = this.headNode;
+        SingleLLNode currentNode = this.headNode;
         for(int i = 0 ; i < index ; i++){
             currentNode = currentNode.nextNode;
         }
@@ -47,18 +48,18 @@ public class SinglyLinkedList extends LinkedList{
 
     @Override
     public void deleteNodeByIndex(int index) {
-        Node currentNode = this.headNode;
+        SingleLLNode currentNode = this.headNode;
         for(int i = 0 ; i < index ; i++){
             currentNode = currentNode.nextNode;
         }
-        Node deletingNode = currentNode.nextNode;
+        SingleLLNode deletingNode = currentNode.nextNode;
         currentNode.nextNode = deletingNode.nextNode;
 
     }
 
     @Override
     public void updateNodeByIndex(int value, int index) {
-        Node currentNode = this.headNode;
+        SingleLLNode currentNode = this.headNode;
         for(int i = 0 ; i <= index ; i++){
             currentNode = currentNode.nextNode;
         }

@@ -1,12 +1,6 @@
 package LinkedListLibrary.ImplementationOfLinkedListDataStructure.LinkedList;
 
-import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.Node;
-import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.SingleLLNode;
-
-public abstract class LinkedList {
-
-    public Node headNode;
-    public Node currentNode;
+public interface LinkedList {
 
     public abstract void displayLinkedList();
     public abstract void displayNodeByIndex(int index);
