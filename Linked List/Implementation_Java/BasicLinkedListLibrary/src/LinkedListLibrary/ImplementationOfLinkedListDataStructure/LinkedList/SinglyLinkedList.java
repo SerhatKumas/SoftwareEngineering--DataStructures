@@ -21,8 +21,8 @@ public class SinglyLinkedList implements LinkedList{
     public void displayLinkedList() {
         SingleLLNode currentNode = this.headNode;
         do{
-            System.out.println(currentNode.toString());
             currentNode = currentNode.nextNode;
+            System.out.println(currentNode.toString());
         }while(currentNode.nextNode!=null);
         System.out.println();
     }
@@ -75,6 +75,11 @@ public class SinglyLinkedList implements LinkedList{
             currentNode = currentNode.nextNode;
         }
         currentNode.data = value;
+    }
+
+    @Override
+    public boolean isLinkedListEmpty() {
+        return headNode.nextNode == null;
     }
 
 }

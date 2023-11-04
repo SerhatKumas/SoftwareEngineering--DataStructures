@@ -21,8 +21,8 @@ public class DoublyLinkedList implements LinkedList {
     public void displayLinkedList() {
         DoublyLLNode currentNode = this.headNode;
         do{
-            System.out.println(currentNode.toString());
             currentNode = currentNode.nextNode;
+            System.out.println(currentNode.toString());
         }while(currentNode.nextNode!=null);
         System.out.println();
     }
@@ -40,7 +40,7 @@ public class DoublyLinkedList implements LinkedList {
     //Adding element to Linked List
     @Override
     public void popNodeAtTheEnd(int newNodeValue) {
-        DoublyLLNode newNode = new DoublyLLNode(newNodeValue, this.currentNode, null);
+        DoublyLLNode newNode = new DoublyLLNode(newNodeValue,null, this.currentNode);
         this.currentNode.nextNode = newNode;
         this.currentNode = newNode;
     }
@@ -80,6 +80,11 @@ public class DoublyLinkedList implements LinkedList {
             currentNode = currentNode.nextNode;
         }
         currentNode.data = value;
+    }
+
+    @Override
+    public boolean isLinkedListEmpty() {
+        return headNode.nextNode == null;
     }
 
 }
