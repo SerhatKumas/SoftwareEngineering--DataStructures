@@ -39,7 +39,7 @@ public class SinglyLinkedList implements LinkedList{
 
     //Adding element to Linked List
     @Override
-    public void popNodeAtTheEnd(int newNodeValue) {
+    public void addNodeAtTheEnd(int newNodeValue) {
         SingleLLNode newNode = new SingleLLNode(newNodeValue, null);
         this.currentNode.nextNode = newNode;
         this.currentNode = newNode;
@@ -47,7 +47,7 @@ public class SinglyLinkedList implements LinkedList{
 
     //Adding element to Linked List by index
     @Override
-    public void popNodeByIndex(int newNodeValue, int index) {
+    public void addNodeByIndex(int newNodeValue, int index) {
         SingleLLNode currentNode = this.headNode;
         for(int i = 0 ; i < index ; i++){
             currentNode = currentNode.nextNode;

@@ -39,7 +39,7 @@ public class DoublyLinkedList implements LinkedList {
 
     //Adding element to Linked List
     @Override
-    public void popNodeAtTheEnd(int newNodeValue) {
+    public void addNodeAtTheEnd(int newNodeValue) {
         DoublyLLNode newNode = new DoublyLLNode(newNodeValue,null, this.currentNode);
         this.currentNode.nextNode = newNode;
         this.currentNode = newNode;
@@ -47,7 +47,7 @@ public class DoublyLinkedList implements LinkedList {
 
     //Adding element to Linked List by index
     @Override
-    public void popNodeByIndex(int newNodeValue, int index) {
+    public void addNodeByIndex(int newNodeValue, int index) {
         DoublyLLNode currentNode = this.headNode;
         for(int i = 0 ; i < index ; i++){
             currentNode = currentNode.nextNode;

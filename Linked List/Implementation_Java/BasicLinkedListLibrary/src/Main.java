@@ -8,14 +8,14 @@ public class Main {
         //is linked list empty check
         System.out.println(doublyLinkedList.isLinkedListEmpty());
         //Addition to the linked list
-        doublyLinkedList.popNodeAtTheEnd(20);
-        doublyLinkedList.popNodeAtTheEnd(25);
-        doublyLinkedList.popNodeAtTheEnd(30);
-        doublyLinkedList.popNodeAtTheEnd(35);
-        doublyLinkedList.popNodeAtTheEnd(40);
-        doublyLinkedList.popNodeAtTheEnd(45);
+        doublyLinkedList.addNodeAtTheEnd(20);
+        doublyLinkedList.addNodeAtTheEnd(25);
+        doublyLinkedList.addNodeAtTheEnd(30);
+        doublyLinkedList.addNodeAtTheEnd(35);
+        doublyLinkedList.addNodeAtTheEnd(40);
+        doublyLinkedList.addNodeAtTheEnd(45);
         //Addition to the end of the linked list
-        doublyLinkedList.popNodeByIndex(10, 0);
+        doublyLinkedList.addNodeByIndex(10, 0);
         //Updating the element of the linked list
         doublyLinkedList.updateNodeByIndex(50,5);
         //Removing the element from the linked list
@@ -31,14 +31,14 @@ public class Main {
         //is linked list empty check
         System.out.println(singlyLinkedList.isLinkedListEmpty());
         //Addition to the linked list
-        singlyLinkedList.popNodeAtTheEnd(20);
-        singlyLinkedList.popNodeAtTheEnd(25);
-        singlyLinkedList.popNodeAtTheEnd(30);
-        singlyLinkedList.popNodeAtTheEnd(35);
-        singlyLinkedList.popNodeAtTheEnd(40);
-        singlyLinkedList.popNodeAtTheEnd(45);
+        singlyLinkedList.addNodeAtTheEnd(20);
+        singlyLinkedList.addNodeAtTheEnd(25);
+        singlyLinkedList.addNodeAtTheEnd(30);
+        singlyLinkedList.addNodeAtTheEnd(35);
+        singlyLinkedList.addNodeAtTheEnd(40);
+        singlyLinkedList.addNodeAtTheEnd(45);
         //Addition to the end of the linked list
-        singlyLinkedList.popNodeByIndex(10, 0);
+        singlyLinkedList.addNodeByIndex(10, 0);
         //Updating the element of the linked list
         singlyLinkedList.updateNodeByIndex(50,5);
         //Removing the element from the linked list
