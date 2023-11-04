@@ -4,13 +4,19 @@ import LinkedListLibrary.ImplementationOfLinkedListDataStructure.Node.SingleLLNo
 
 public class SinglyLinkedList implements LinkedList{
 
+    //Starting Node
     public SingleLLNode headNode;
+
+    //Current Node to pop new elements
     public SingleLLNode currentNode;
+
+    //Linked List Initializer
     public SinglyLinkedList(){
         this.headNode = new SingleLLNode(null);
         this.currentNode = headNode;
     }
 
+    //Display Method
     @Override
     public void displayLinkedList() {
         SingleLLNode currentNode = this.headNode;
@@ -21,6 +27,7 @@ public class SinglyLinkedList implements LinkedList{
         System.out.println();
     }
 
+    //Display by Index Method
     @Override
     public void displayNodeByIndex(int index) {
         SingleLLNode currentNode = this.headNode;
@@ -30,6 +37,7 @@ public class SinglyLinkedList implements LinkedList{
         System.out.println(currentNode.data);
     }
 
+    //Adding element to Linked List
     @Override
     public void popNodeAtTheEnd(int newNodeValue) {
         SingleLLNode newNode = new SingleLLNode(newNodeValue, null);
@@ -37,6 +45,7 @@ public class SinglyLinkedList implements LinkedList{
         this.currentNode = newNode;
     }
 
+    //Adding element to Linked List by index
     @Override
     public void popNodeByIndex(int newNodeValue, int index) {
         SingleLLNode currentNode = this.headNode;
@@ -46,6 +55,7 @@ public class SinglyLinkedList implements LinkedList{
         currentNode.nextNode = new SingleLLNode(newNodeValue, currentNode.nextNode);
     }
 
+    //Deleting element by index
     @Override
     public void deleteNodeByIndex(int index) {
         SingleLLNode currentNode = this.headNode;
@@ -57,6 +67,7 @@ public class SinglyLinkedList implements LinkedList{
 
     }
 
+    //Updating element by index
     @Override
     public void updateNodeByIndex(int value, int index) {
         SingleLLNode currentNode = this.headNode;

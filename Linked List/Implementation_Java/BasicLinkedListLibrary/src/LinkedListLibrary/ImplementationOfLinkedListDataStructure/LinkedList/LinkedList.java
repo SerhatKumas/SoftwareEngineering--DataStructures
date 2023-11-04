@@ -1,7 +1,7 @@
 package LinkedListLibrary.ImplementationOfLinkedListDataStructure.LinkedList;
 
 public interface LinkedList {
-
+    // Linked List Methods
     public abstract void displayLinkedList();
     public abstract void displayNodeByIndex(int index);
     public abstract void popNodeAtTheEnd(int newNodeValue);
