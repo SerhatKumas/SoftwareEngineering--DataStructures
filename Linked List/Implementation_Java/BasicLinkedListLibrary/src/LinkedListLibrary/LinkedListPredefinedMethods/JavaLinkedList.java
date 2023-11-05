@@ -1,4 +1,4 @@
-package LinkedListLibrary.LinkedListMethods;
+package LinkedListLibrary.LinkedListPredefinedMethods;
 
 import java.util.LinkedList;
 
