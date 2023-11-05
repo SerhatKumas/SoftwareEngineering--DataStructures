@@ -51,9 +51,10 @@ public class Stack {
     public void display(){
         Node pointer = topNode;
         while (pointer!=bottomNode){
-            System.out.println(pointer.data);
+            System.out.print(pointer.data + " ");
             pointer = pointer.previousNode;
         }
+        System.out.println();
     }
 
     //Returning the top element of the stack
