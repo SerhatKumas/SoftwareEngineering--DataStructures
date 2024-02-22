@@ -26,7 +26,7 @@
 - All the references used in the projecs are given in pdf files under Documentation folders.
   
 
-## Links of Auther
+## Links of Author
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/serhatkumas/)
 
